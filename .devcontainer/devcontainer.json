@@ -17,10 +17,10 @@
 	},
 	"postCreateCommand": "sh /usr/local/post-create.sh",
   // Optionally: run jekyll serve automatically on container entering using the Docker entrypoint
-  "postAttachCommand": "chmod +x ./src/scripts/entrypoint.sh && ./src/scripts/entrypoint.sh",
+  "postAttachCommand": "./src/scripts/entrypoint.sh",
   "customizations": {
     "vscode": {
-      "extensions": ["esbenp.prettier-vscode", "sissel.shopify-liquid", "yzhang.markdown-all-in-one", "ms-azuretools.vscode-docker", "github.vscode-github-actions", "google.geminicodeassist", "gruntfuggly.todo-tree"],
+      "extensions": ["esbenp.prettier-vscode", "sissel.shopify-liquid", "yzhang.markdown-all-in-one", "ms-azuretools.vscode-docker", "github.vscode-github-actions", "google.geminicodeassist", "gruntfuggly.todo-tree", "eamodio.gitlens"],
       "settings": {
         // use prettier code formatter as default formatter
         "editor.defaultFormatter": "esbenp.prettier-vscode",
